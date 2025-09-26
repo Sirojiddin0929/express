@@ -17,7 +17,7 @@ async function readBooks() {
     }
     
 }
-async function writeBooks() {
+async function writeBooks(books) {
     try{
         await fs.writeFile(dbPath,JSON.stringify(books,null,2))
 
@@ -27,4 +27,4 @@ async function writeBooks() {
     }
     
 }
-module.exports({readBooks,writeBooks})
+module.exports={readBooks,writeBooks}

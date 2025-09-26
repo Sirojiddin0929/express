@@ -112,6 +112,6 @@ app.delete("/books/:id", async (req, res) => {
 })
 
 
-app.listen(6000, () => {
-    console.log("Server running on port 6000 ")
+app.listen(7000, () => {
+    console.log("Server running on port 7000 ")
 })
